@@ -1,46 +1,54 @@
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React , {useState} from 'react';
 import { Alert, StyleSheet, Text,TextInput, TouchableOpacity,Image, View } from 'react-native';
-import AppRoutes from './Route' 
-import { ThemeProvider } from '@react-navigation/native';
 
-export  function App() {
-
+// import Title from './src/components/Title';
+// import Main from './src/components/main';
+export  function Fav() {
+    const navigation = useNavigation()
       const imgHome =  require('./src/components/drawble/home.png')
       const imgHeart =  require('./src/components/drawble/heart.png')
       const imgProf =  require('./src/components/drawble/profile.png')
+  
+  return (
+    <View style={styles.container}>
+        <View>
+          <Text style = {[styles.title,{width:200,textAlign:'center'}]}>
+            Meus Favs</Text>
+        </View>
+   
+    <View style = {styles.bottomBar}>
+      <TouchableOpacity onPress={() => navigation.navigate('Home')} > 
+      <Image source={imgHome} style={styles.imgTool}></Image>
+      </TouchableOpacity>
 
-       
-      return (
-        <ThemeProvider>
-        <AppRoutes />
-        </ThemeProvider>
-      );
+      <TouchableOpacity>
+      <Image source={imgHeart} style={styles.ImgHP}></Image>
+      </TouchableOpacity>
 
-      }
+      <TouchableOpacity onPress={() => navigation.navigate('Perfil')}>
+      <Image source={imgProf} style={styles.ImgHP} ></Image>
+      </TouchableOpacity>
+    
+    </View>
 
-
-
-
+  </View>
+  );
+}
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 0,
     flex: 1,
-    flexDirection: "co"
-  }, topBar:{
-    flexDirection:"column",
-    height: 256,
-    backgroundColor: "#B01E68",
-    borderBottomLeftRadius:20,
-    borderBottomRightRadius:20
-
+    flexDirection: "column",
+    backgroundColor:'#B01E68'
   },title :{
     color:"#FFE15D",
-    fontSize:65,
+    fontSize:60,
     fontWeight:"bold",
     alignSelf: 'center',
-    marginTop:35
+    marginTop:25
   },botaoBuscar :{
     backgroundColor : "#018789",
     width:120,
@@ -85,4 +93,4 @@ const styles = StyleSheet.create({
     height:55
   }
 });
-export default App;
+export default Fav;
