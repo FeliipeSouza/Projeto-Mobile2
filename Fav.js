@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React , {useState} from 'react';
 import { Alert, StyleSheet, Text,TextInput, TouchableOpacity,Image, View } from 'react-native';
-
+import Home from './Home';
 // import Title from './src/components/Title';
 // import Main from './src/components/main';
 export  function Fav() {
@@ -17,7 +17,8 @@ export  function Fav() {
           <Text style = {[styles.title,{width:200,textAlign:'center'}]}>
             Meus Favs</Text>
         </View>
-   
+
+
     <View style = {styles.bottomBar}>
       <TouchableOpacity onPress={() => navigation.navigate('Home')} > 
       <Image source={imgHome} style={styles.imgTool}></Image>

@@ -6,11 +6,6 @@ import { ThemeProvider } from '@react-navigation/native';
 
 export  function App() {
 
-      const imgHome =  require('./src/components/drawble/home.png')
-      const imgHeart =  require('./src/components/drawble/heart.png')
-      const imgProf =  require('./src/components/drawble/profile.png')
-
-       
       return (
         <ThemeProvider>
         <AppRoutes />
@@ -18,11 +13,6 @@ export  function App() {
       );
 
       }
-
-
-
-
-
 const styles = StyleSheet.create({
   container: {
     marginTop: 20,
