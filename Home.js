@@ -55,12 +55,7 @@ export  function  Home   (props) {
   };
 
 
-  const dataCarro = [
-    { img: require('./src/components/drawble/jack.jpeg'), text: '#Banda1' },
-    { img: require('./src/components/drawble/heart.png'), text: '#Banda2' },
-    { img: require('./src/components/drawble/profile.png'), text: '#Banda3' },
-  ];
-        
+ 
 // --------RENDERCARD----------
   const renderCardItem = ({item}) => {
     return(
