@@ -1,5 +1,5 @@
 <p align="center">DOWNTOWN by Fight Club <br/>
-🚧 Projeto em construção 🚧 </p>
+ </p>
 
 <p align="center">
   <img src="https://github.com/FeliipeSouza/Projeto-Mobile/blob/main/app/src/main/res/drawable/down_splash2.png" alt="DownTown" width="400">
