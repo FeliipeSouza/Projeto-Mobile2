@@ -63,6 +63,9 @@ Nosso projeto tem como objetivo proporcionar uma melhor experiência aos partici
 - `Personalizar perfil`: o usuário pode customizar seu perfil, com foto, nome e breve descrição, sendo possível adicionar, também, suas redes sociais.
 
 <div id='requisitos'/>
+ 
+## Executavel
+https://expo.dev/artifacts/eas/2249jbcAELUKKzSQdfXe7J.aab
   
 ## 📋 Pré-requisitos
 
